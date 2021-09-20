@@ -29,7 +29,7 @@ def display_rawdata(df):
             user_input = input("Do you want to see the first five rows of data? Enter yes or no\n")
 
         if user_input.lower() == 'yes':
-            df[index:index + 5]
+            print(df.loc[index:index + 5])
             index += 5
             print('-' * 80)
         elif user_input.lower() == 'no':
